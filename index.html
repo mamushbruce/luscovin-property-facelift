@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luscovin</title>
+  <link rel="stylesheet" href="./styles/home.css">
+  <style>
+    /* Styles for Hero Section */
+    .hero {
+      background-image: url('images/hero.jpg');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 100px;
+    }
+
+    .hero-background {
+      background-image: url('../luscovin/images/background.JPG');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+
+    }
+  </style>
+</head>
+<body>
+
+    <!-- nav  -->
+    <nav class="navbar">
+      <div class="nav-center">
+        <div class="nav-header">
+          <a href="index.html" class="nav-logo">
+            <img src="./assets/logo.svg" alt="icon.png" />
+          </a>
+          <button class="nav-btn btn">
+            <i class="fas fa-align-justify"></i>
+          </button>
+        </div>
+        <div class="nav-links">
+          <a href="index.html" class="nav-link active"> home </a>
+          <a href="services.html" class="nav-link"> services </a>
+          <a href="pricing.html" class="nav-link"> pricing </a>
+          <a href="about.html" class="nav-link"> about </a>
+
+          <div class="nav-link contact-link">
+            <a href="contact.html" class="btn"> contact </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+  <!-- Hero Section -->
+  <div class="main">
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Luscovin property facelift LTD services<br>is a Facility maintenance company in uganda.<br>Funded by individuals with a vast experience in both<br>industrial hygiene and facility management skills.</h1>
+      <div class="contact-card">
+        <!--add a checkbox for each of the following; compound fumigation, rooftop cleaning, lawn maintenance--> 
+        <div class="card-header">Contact Us</div>
+        <form id="form">
+          <input type="text" placeholder="Name">
+          <input type="email" placeholder="Email">
+          <input type="tel" placeholder="Phone Number">
+          <textarea placeholder="Message"></textarea>
+          <button id="submit" type="submit">Publish</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Body -->
+  <section id="services" class="services-section">
+    <div class="services-container">
+      <h2>Services We Offer</h2>
+      <p>Description</p>
+      <div class="services-grid">
+        <div class="service-card">
+          <img src="images/card-1.jpg" alt="Service 1">
+          <div class="card-description">Description</div>
+        </div>
+        <div class="service-card">
+          <img src="images/card-2.jpg" alt="Service 2">
+          <div class="card-description">Description</div>
+        </div>
+        <div class="service-card">
+          <img src="images/card-3.jpg" alt="Service 3">
+          <div class="card-description">Description</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Book With Us -->
+  <section id="why-book" class="why-book-section">
+    <div class="why-book-container">
+      <div class="why-book-content">
+        <h2>Why Book With Us?</h2>
+        <p>We provide online booking, lightening fast customer service,<br>and fantastic organised service. We want to WOW you with<br>outstanding customer service, ecologically sustainable quality<br>maintenance products, no contractual obligations, pricing that<br>beats the competitors and a 200% quarantee every time! </p>
+      </div>
+      <div class="why-book-icons">
+        <!-- Placeholder for icons with descriptions -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Division -->
+  <section id="services" class="services-section">
+    <div class="services-container">
+      <h2 class="section-title">Services</h2>
+      <p>Here at Luscovin property facelift, we believe that keeping a place as a home requires proper maintenance and mangement<br>so we want to keep your place as a home conveniently</p>
+      <a href="#view-services" class="view-services-link">VIEW ALL SERVICES</a>
+    </div>
+  </section>
+
+  <!-- Another Hero Section -->
+  <section class="hero-background">
+    <div class="hero-content">
+      <div class="card">
+        <div class="card-img"></div>
+        <div class="card-description">
+          <h3>Compound fumigation</h3>
+          <p>UGX 100,000</p>
+          <p>Negotiable depending<br>area size</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-img1"></div>
+        <div class="card-description">
+          <h3>Rooftop Cleaning</h3>
+          <p>UGX 35,000</p>
+          <p>Per sqm</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-img2"></div>
+        <div class="card-description">
+          <h3>Lawn maintenance</h3>
+          <p>UGX 120,000</p>
+          <p>Per 130 yards</p>
+        </div>
+      </div>
+      <!-- More cards here -->
+    </div>
+    <div class="booking">
+      <!-- <div class="booking-text"> -->
+        <p>Flat rate pricing for everyone!<br>Discounts: Monthly 10% Fortnightly 15% weekly 20%</p>
+        <!-- <button>BOOK NOW</button> -->
+      <!-- </div> -->
+      <button class="btn">BOOK NOW</button>
+    </div>
+  </section>
+
+  <!-- Last Division -->
+  <section class="last-section">
+    <div class="last-container">
+      <div class="google-preview"></div>
+        <div class="chat">
+          <h2>Let's Start</h2>
+          <p>We will consistently bring you the wow factor with our excellent customer service and attention to detail.</p>
+          <button>Chat with us now</button>
+          <p>or Call us +256 200 903 910</p>
+        </div>
+    </div>
+  </section>
+</div>
+
+  <footer>
+    <div class="logo-section">
+      <img src="./images/logo.jpg">
+    </div>
+    <div class="footer-content">
+      <div class="links-and-socials">
+        <div class="socials"></div>
+        <div class="links">
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#about">About</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        <div>
+          <p>2023.All Rights Reserved. <br> Terms and conditions apply</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="home.js"></script>
+</body>
+</html>
