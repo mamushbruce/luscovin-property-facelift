@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Us</title>
   <link rel="stylesheet" href="../styles/about.css">
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
 </head>
 <body>
 
@@ -13,20 +17,20 @@
       <div class="nav-center">
         <div class="nav-header">
           <a href="index.html" class="nav-logo">
-            <img src="./assets/logo.svg" alt="icon.png" />
+            <img src="../images/logo.png" alt="icon.png" />
           </a>
           <button class="nav-btn btn">
             <i class="fas fa-align-justify"></i>
           </button>
         </div>
         <div class="nav-links">
-          <a href="index.html" class="nav-link"> home </a>
-          <a href="services.html" class="nav-link"> services </a>
-          <a href="pricing.html" class="nav-link active"> pricing </a>
-          <a href="about.html" class="nav-link"> about </a>
+          <a href="../index.html" class="nav-link"> home </a>
+          <a href="../services/services.html" class="nav-link"> services </a>
+          <a href="../pricing/pricing.html" class="nav-link"> pricing </a>
+          <a href="./about.html" class="nav-link active"> about </a>
 
           <div class="nav-link contact-link">
-            <a href="contact.html" class="btn"> contact </a>
+            <a href="../contact/contact.html" class="btn"> contact </a>
           </div>
         </div>
       </div>
@@ -36,8 +40,8 @@
       <header class="hero">
         <div class="hero-container">
           <div class="hero-text">
-            <h1>OUR SERVICES</h1>
-            <h4>We offer a wide range of Services</h4>
+            <h1>ABOUT US</h1>
+            <h4>Want to know about us?</h4>
           </div>
         </div>
       </header>
@@ -56,14 +60,14 @@
         </article>
         <!-- needs fixes -->
         <img
-          src="../images/logo.jpg"
+          src="../images/manager.jpg"
           alt="manager"
           class="img about-img"
         />
       </section>
       <section class="about-page">
         <img
-          src="../images/logo.jpg"
+          src="../images/team.jpg"
           alt="Person Pouring Salt in Bowl"
           class="img about-img"
         />
@@ -93,7 +97,7 @@
         </article>
         <!-- needs fixes -->
         <img
-          src="../images/logo.jpg"
+          src="../images/house.jpg"
           alt="manager"
           class="img about-img"
         />
@@ -101,35 +105,36 @@
       <section class="about-page">
         <h1>ALl SERVICES</h1>
         <div class="tags-list">
-            <a href="tag-template.html">Lawn-maintenance</a>
-            <a href="tag-template.html">Compound-fumigation</a>
-            <a href="tag-template.html">Garbage-collection</a>
-            <a href="tag-template.html">Root-cleaning</a>
-            <a href="tag-template.html">Lawn-maintenance</a>
-            <a href="tag-template.html">Compound-fumigation</a>
-            <a href="tag-template.html">Garbage-collection</a>
-            <a href="tag-template.html">Root-cleaning</a>
+            <a href="../404.html">Lawn-maintenance</a>
+            <a href="../404.html">Compound-fumigation</a>
+            <a href="../404.html">Garbage-collection</a>
+            <a href="../404.html">Root-cleaning</a>
+            <a href="../404.html">Lawn-maintenance</a>
+            <a href="../404.html">Compound-fumigation</a>
+            <a href="../404.html">Garbage-collection</a>
+            <a href="../404.html">Root-cleaning</a>
           </div>
       </section>
-      <section class="about-page">
+<!--       <section class="about-page">
           <img src="../images/pricing-1.jpg" class="large">
           <img src="../images/pricing-2.jpg" class="small">
-<!--         <div class="large">
-        </div>
-        <div class="small">
-        </div> -->
-      </section>
+      </section> -->
 </main>
 
 
   <!-- Footer -->
   <footer>
     <div class="logo-section">
-      <img src="images/logo.jpg">
+      <img src="../images/logo.png">
     </div>
     <div class="footer-content">
       <div class="links-and-socials">
-        <div class="socials"></div>
+        <div class="socials">
+          <i class="fas fa-facebook"></i>
+          <i class="fas fa-linkedin"></i>
+          <i class="fas fa-instagram"></i>
+          <i class="fas fa-whatsapp"></i>
+        </div>
         <div class="links">
           <ul class="footer-links">
             <li><a href="#home">Home</a></li>
@@ -141,13 +146,13 @@
       </div>
       <div class="copyright">
         <div>
-          <p>2023. All Rights Reserved. <br> Terms and conditions apply</p>
+          <p>&copy; <span id="date"></span>. All Rights Reserved. <br> Terms and conditions apply</p>
         </div>
       </div>
     </div>
   </footer>
 
   <!-- JavaScript -->
-  <script src="./about.js"></script>
+  <script src="../js/app.js"></script>
 </body>
 </html>

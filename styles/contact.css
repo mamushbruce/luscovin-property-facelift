@@ -72,11 +72,11 @@ body {
   color: var(--textColor);
 }
 
-p {
+/*p {
   margin-top: 0;
   margin-bottom: 1.5rem;
   max-width: 40em;
-}
+}*/
 
 h1,
 h2,
@@ -162,6 +162,17 @@ ul {
   width: 100%;
 }
 
+/*pages*/
+.main {
+  width: 90vw;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+.main {
+  padding-top: 2rem;
+  min-height: calc(100vh - (6rem + 4rem));
+}
+
 /* Styles for Navigation Bar */
 
 .navbar {
@@ -227,6 +238,7 @@ ul {
 .active {
   font-weight: bolder;
   color: black;
+  background-color: antiquewhite;
 }
 
 @media screen and (min-width: 992px) {
@@ -263,122 +275,25 @@ ul {
     margin-left: auto;
   }
 }
-/*page*/
 
-.main {
-  width: 90vw;
-  max-width: var(--max-width);
-  margin: 0 auto;
+.contact-form {
+  width: 100%;
+  margin: 0;
 }
-.main {
-  padding-top: 2rem;
-  min-height: calc(100vh - (6rem + 4rem));
-}
-
-  /* Styles for Pricing Section */
-  .pricing-section {
-    text-align: center;
-    padding: 50px 0;
-  }
-  
-  .pricing-container h1 {
-    margin-bottom: 30px;
-  }
-  
-  .pricing-cards {
-    display: flex;
-    justify-content: space-around;
-  }
-  
-  .pricing-card {
-    width: 30%;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    padding: 20px;
-    margin-bottom: 20px;
-  }
-  
-  .pricing-card img {
-    width: 100%;
-    border-radius: 10px;
-    margin-bottom: 10px;
-  }
-  
-  .card-description {
-    text-align: left;
-  }
-  
-  .card-description h2 {
-    margin-bottom: 10px;
-    margin: 5px 0;
-}
-
-.card-description button {
-  padding: 10px 20px;
-  background-color: deepskyblue;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-/* Styles for Service Form */
-.service-form {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #fff;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  z-index: 999;
-}
-
-.service-form.hidden {
-  display: none;
-}
-
-.service-form form {
-  display: flex;
-  flex-direction: column;
-}
-
-.service-form input,
-.service-form button {
-  margin-bottom: 10px;
-}
-
-.show-pricing {
-  height: 600px;
-}
-
-.pricing-img {
-  background-image: url(../images/logo.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 200px;
-  width: 200px;
-}
-
-.pricing-down {
+.contact-container {
   display: grid;
   gap: 2rem 3rem;
-  padding: 3rem;
-/*  height: 0;*/
-  overflow: hidden;
-  transition: var(--transition);
+  padding-bottom: 3rem;
 }
 @media screen and (min-width: 992px) {
-  .pricing-down {
+  .contact-container {
     grid-template-columns: 1fr 450px;
     align-items: center;
   }
 }
 
-/* Styles for Footer */
-footer {
+
+ footer {
     display: flex;
     background-color: deepskyblue;
     height: 150px;
@@ -425,26 +340,5 @@ footer {
     height: 100%;
     width: 150px;
   }
-
-/* Add your additional CSS styles here */
-  /* Pricing Page Responsive Styles */
-@media only screen and (max-width: 768px) {
-    .pricing-card {
-      width: 100%;
-    }
   
-    .manager-info {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .manager-image {
-      margin-right: 0;
-      margin-bottom: 20px;
-    }
-  
-    .team-cards {
-      flex-direction: column;
-    }
-  }
   

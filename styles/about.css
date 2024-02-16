@@ -181,7 +181,7 @@ ul {
   align-items: center;
 }
 .nav-header img {
-  width: 200px;
+  width: 90px;
 }
 .nav-logo {
   display: flex;
@@ -282,9 +282,10 @@ ul {
   height: 40vh;
   position: relative;
   margin-bottom: 2rem;
-  background: url('../images/background.jpg') center/cover no-repeat;
+  background: url('../images/jacket.jpg') center/cover no-repeat;
   border-radius: var(--borderRadius);
   background-attachment: fixed;
+  color: black;
 }
 
 .hero-container {
