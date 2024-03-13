@@ -897,6 +897,10 @@
         margin-top: 30px;
         width: 216px;
     }
+
+    .header-carousel .owl-nav {
+      top: 78%;
+    }
 }
 
 .img {
