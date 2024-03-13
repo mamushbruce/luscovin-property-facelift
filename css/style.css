@@ -283,6 +283,15 @@
         object-fit: cover;
     }
 
+    .header-carousel .owl-nav {
+      position: absolute;
+      top: 78%;
+      right: 8%;
+      transform: translateY(-50%);
+      display: flex;
+      flex-direction: column;
+      }
+
     .hero-content h2 {
         font-size: 18px;
         margin-left: 15px;
@@ -898,9 +907,7 @@
         width: 216px;
     }
 
-    .header-carousel .owl-nav {
-      top: 78%;
-    }
+    
 }
 
 .img {
