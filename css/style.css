@@ -1,6 +1,6 @@
 /********** Template CSS **********/
 :root {
-    --primary: #06BBCC;
+    --primary: #00a652;
     --light: #F0FBFC;
     --dark: #181d38;
   /* colors */
@@ -228,15 +228,15 @@
     padding: 20px;
     border-radius: 10px;
     position: absolute;
-    bottom: -20px;
+    bottom: -70px;
     right: 50px;
-    height: 200px;
+    height: 300px;
     width: 300px;
     z-index: 10;
   }
   
   .card-header {
-    background-color: blue;
+    background-color: #ed1b24;
     color: white;
     padding: 10px;
   }
@@ -260,7 +260,7 @@
     margin-top: 15px;
     width: 80px;
     color: #fff;
-    background-color: #06BBCC;
+    background-color: #00a652;
     border-radius: 12px;
   }
   
@@ -282,15 +282,6 @@
         height: 100%;
         object-fit: cover;
     }
-
-    .header-carousel .owl-nav {
-      position: absolute;
-      top: 78%;
-      right: 8%;
-      transform: translateY(-50%);
-      display: flex;
-      flex-direction: column;
-      }
 
     .hero-content h2 {
         font-size: 18px;
@@ -420,6 +411,10 @@
 
 /*** Categories & Courses ***/
 
+.why-space{
+    height: fit-content;
+}
+
   .why-book-section {
     background-color: #f9f9f9;
     padding: 50px 0;
@@ -438,12 +433,18 @@
     width: 40%;
     height: 100%;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .why-book-content p {
     height: 100%;
     width: 100%;
-    text-align: center;
+    text-align: left;
+/*    letter-spacing: 0.75px;*/
+    line-height: 30px;
+    align-self: center;
   }
 
   .why-book-icons {
@@ -463,7 +464,16 @@
     margin: 0 10px;
     height: 100%;
     width: 100%;
-    background-color: cyan;
+/*    background-color: cyan;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+  }
+
+  .icon-section div h3 {
+    font-size: 0.67rem;
   }
 
 .category img,
@@ -536,6 +546,10 @@
     .testimonial-carousel::before,
     .testimonial-carousel::after {
         width: 200px;
+    }
+
+    .why-book-container {
+        flex-wrap: wrap;
     }
 }
 
@@ -693,24 +707,14 @@
   position: absolute;
   width: 100%;
   height: 100%;
-/*  background-color: deepskyblue;*/
-/*    z-index: 2;*/
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
 }
 
 .flip-front img {
   width: 100%;
   height: 70%;
-/*  padding: 20px;
-  border-radius: 12px;*/
 }
-
-/*.flip-front-div {
-  background-image: url(../images/card-2.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-}*/
 
 .flip:hover .flip-inner {
   transform: rotateY(180deg);
@@ -879,11 +883,17 @@
 .raw {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
-    margin: 10px;
 }
 
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 180px;
+}
 
 .worker {
     border-radius: 50%;
@@ -892,6 +902,7 @@
 }
 
 .img-fluids {
+    
     object-fit: cover;
     object-position: center;
 }
@@ -905,9 +916,34 @@
         flex-direction: column;
         margin-top: 30px;
         width: 216px;
+        height: auto;
     }
 
-    
+    .why-book-container {
+        flex-wrap: wrap;
+    }
+
+    .why-book-content {
+        width: 300px;
+        height: 300px;
+    }
+
+    .why-book-icons {
+        width: 300px;
+        height: 300px;
+    }
+
+    .why-space{
+    height: 800px;
+    }
+
+    .icon {
+        padding: 10px !important;
+    }
+
+    .h2 {
+        font-size: calc(1.1rem + .9vw);
+    }
 }
 
 .img {
@@ -915,6 +951,7 @@
   object-position: center;
   height: 100%;
   width: 100%;
+  padding: 0;
   /* position: absolute;
   inset: 0; */
 }
@@ -922,4 +959,21 @@
 .bg {
   height: 70vh;
   width: 100%;
+}
+
+.icon {
+    height: 100%;
+    width: 80px;
+    padding: 2px;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+
+.img {
+    height: 40vh;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
 }
