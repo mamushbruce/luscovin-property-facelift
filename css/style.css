@@ -436,6 +436,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-left: 25px;
   }
 
   .why-book-content p {
@@ -474,6 +475,10 @@
 
   .icon-section div h3 {
     font-size: 0.67rem;
+  }
+
+  .icon-section div i {
+    color: #25aae2;
   }
 
 .category img,
@@ -892,7 +897,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    height: 180px;
+    height: 200px;
 }
 
 .worker {
@@ -926,6 +931,7 @@
     .why-book-content {
         width: 300px;
         height: 300px;
+        margin-left: 0;
     }
 
     .why-book-icons {
@@ -945,16 +951,14 @@
         font-size: calc(1.1rem + .9vw);
     }
 }
-
+/* 
 .img {
   object-fit: cover;
   object-position: center;
   height: 100%;
   width: 100%;
   padding: 0;
-  /* position: absolute;
-  inset: 0; */
-}
+} */
 
 .bg {
   height: 70vh;
@@ -972,7 +976,7 @@
 
 
 .img {
-    height: 40vh;
+    height: 100%;
     width: 100%;
     object-fit: cover;
     object-position: center;
