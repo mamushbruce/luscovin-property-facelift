@@ -112,7 +112,7 @@
 
         .logo {
             width: 8vw;
-            height: 100%;
+            /* height: 100%; */
 /*          background-color: black;*/
         }
 
@@ -532,7 +532,7 @@
     position: absolute;
     bottom: -70px;
     right: 50px;
-    height: 291px;
+    height: 365px;
     width: 300px;
     z-index: 10;
   }
