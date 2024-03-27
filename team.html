@@ -33,9 +33,20 @@
 
 <body>
     <!-- Spinner Start -->
-    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
-            <span class="sr-only">Loading...</span>
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50">
+        <div class="body">
+            <div class="loader">
+                <div class="logo">
+                    <img src="./img/icon-trans.png">
+                </div>
+                <div class="words">
+                    <div>
+                        <h3>Luscovin</h3>
+                        <h3>Property</h3>
+                        <h3>Facelift</h3>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <!-- Spinner End -->
@@ -43,9 +54,9 @@
 
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
-        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+        <a href="index.html" class="navbar-brand navbar-brands">
             <img class="icon" src="./img/icon-trans.png">
-            <h2 class="m-0 text-primary h2">LUSCOVIN</h2>        </a>
+            <h2 class="m-0 text-primary h2 logo">LUSCOVIN</h2>        </a>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -58,13 +69,17 @@
                     <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Info</a>
                     <div class="dropdown-menu fade-down m-0">
                         <a href="team.html" class="dropdown-item active">Our Team</a>
-                        <a href="testimonial.html" class="dropdown-item">Pricing</a>
+                        <a href="pricing.html" class="dropdown-item">Pricing</a>
                         <!-- <a href="404.html" class="dropdown-item">404 Page</a> -->
                     </div>
                 </div>
                 <a href="contact.html" class="nav-item nav-link">Contact</a>
             </div>
-            <a href="" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Book Now<i class="fa fa-arrow-right ms-3"></i></a>
+            <button id="book-btn" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block" onclick="
+            const overlay = document.getElementById('overlay')
+                overlay.classList.toggle('overlay1')
+
+            " >Book Now<i class="fa fa-arrow-right ms-3"></i></button>
         </div>
     </nav>
     <!-- Navbar End -->
@@ -89,6 +104,35 @@
     </div>
     <!-- Header End -->
 
+<!-- Overlay with booking form -->
+    <div class="overlay" id="overlay">
+        <div class="booking-container">
+            <h2>Booking Service</h2>
+            <form id="bookingForm" action="submit.php" method="post">
+                <label for="service">Service:</label>
+                <input type="text" id="service" name="service" autocomplete="off">
+                <label for="service">Custom Service:</label>
+                <input type="text" id="customService" name="customService" autocomplete="off">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="phone">Phone Number:</label>
+                <input type="text" id="phone" name="phone" required>
+                <label for="additionalInfo">Brief Information:</label>
+                <textarea id="additionalInfo" name="additionalInfo" rows="4"></textarea>
+                <div class="buttons">
+                <button type="submit" class="btn book-btn">Get Estimate</button>
+                <button class="btn cancel-btn" onclick="
+            const overlay = document.getElementById('overlay')
+                overlay.classList.toggle('overlay1')
+
+            " >Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
 
     <!-- Team Start -->
     <div class="container-xxl py-5">
@@ -101,7 +145,7 @@
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="team-item bg-light">
                         <div class="overflow-hidden worker">
-                            <img class="img-fluid" src="img/team-1.jpg" alt="">
+                            <img class="img-fluid" src="img/team-1.jpg" alt="pic">
                         </div>
                         <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
                             <div class="bg-light d-flex justify-content-center pt-2 px-1">
@@ -119,7 +163,7 @@
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="team-item bg-light">
                         <div class="overflow-hidden worker">
-                            <img class="img-fluid" src="img/team-2.jpg" alt="">
+                            <img class="img-fluid" src="img/team-2.jpg" alt="pic">
                         </div>
                         <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
                             <div class="bg-light d-flex justify-content-center pt-2 px-1">
@@ -137,7 +181,7 @@
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="team-item bg-light">
                         <div class="overflow-hidden worker">
-                            <img class="img-fluid" src="img/team-3.jpg" alt="">
+                            <img class="img-fluid" src="img/team-3.jpg" alt="pic">
                         </div>
                         <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
                             <div class="bg-light d-flex justify-content-center pt-2 px-1">
@@ -155,7 +199,7 @@
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
                     <div class="team-item bg-light">
                         <div class="overflow-hidden worker">
-                            <img class="img-fluid" src="img/team-4.jpg" alt="">
+                            <img class="img-fluid" src="img/team-4.jpg" alt="pic">
                         </div>
                         <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
                             <div class="bg-light d-flex justify-content-center pt-2 px-1">
@@ -173,7 +217,7 @@
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="team-item bg-light">
                         <div class="overflow-hidden worker">
-                            <img class="img-fluid" src="img/team-2.jpg" alt="">
+                            <img class="img-fluid" src="img/team-2.jpg" alt="pic">
                         </div>
                         <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
                             <div class="bg-light d-flex justify-content-center pt-2 px-1">
@@ -191,7 +235,7 @@
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="team-item bg-light">
                         <div class="overflow-hidden worker">
-                            <img class="img-fluid" src="img/team-3.jpg" alt="">
+                            <img class="img-fluid" src="img/team-3.jpg" alt="pic">
                         </div>
                         <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
                             <div class="bg-light d-flex justify-content-center pt-2 px-1">
@@ -209,7 +253,7 @@
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="team-item bg-light">
                         <div class="overflow-hidden worker">
-                            <img class="img-fluid" src="img/team-4.jpg" alt="">
+                            <img class="img-fluid" src="img/team-4.jpg" alt="pic">
                         </div>
                         <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
                             <div class="bg-light d-flex justify-content-center pt-2 px-1">
@@ -227,7 +271,7 @@
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
                     <div class="team-item bg-light">
                         <div class="overflow-hidden worker">
-                            <img class="img-fluid" src="img/team-1.jpg" alt="">
+                            <img class="img-fluid" src="img/team-1.jpg" alt="pic">
                         </div>
                         <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
                             <div class="bg-light d-flex justify-content-center pt-2 px-1">
