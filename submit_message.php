@@ -9,7 +9,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   $message = filter_var($_POST['message'], FILTER_SANITIZE_STRING);
 
   // Email configuration
-  $recipient = "your_email@example.com"; // Replace with your actual email
+  $recipient = "mamushbruce@gmail.com"; // Replace with your actual email
   $subject = "Message from Website: $service"; // Subject prepended with service
 
   // Create email body
