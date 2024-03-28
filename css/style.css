@@ -890,10 +890,6 @@
         transform: translateX(-25%);
     }
 
-    .associates {
-        height: 700px;
-    }
-
 }
 
 @media (min-width: 992px) {
@@ -902,9 +898,6 @@
         width: 300px;
     }
 
-    .associates {
-        height: 700px;
-    }
 }
 
 /* py5 */
@@ -1013,9 +1006,6 @@
     grid-template-columns: 1fr 1fr;
   }
 
-  .associates {
-    height: 700px;
-}
 
 }
 
@@ -1349,6 +1339,18 @@
     height: 800px;
     }
 
+    .why-book-section {
+        height: 700px;
+    }
+
+    .why-book-container{
+        justify-content: center;
+    }
+
+    .cancel-btn {
+        top: 46px;
+    }
+    
     .icon {
         padding: 10px !important;
     }
