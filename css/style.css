@@ -300,6 +300,9 @@
 }
 
 .cancel-btn {
+    position: absolute;
+    top: 30px;
+    right: 30px;
     align-self: flex-end;
     height: 50px;
     color: #000;
@@ -424,6 +427,7 @@
             overflow: scroll;
         }
         #bookingForm {
+            position: relative;
             max-width: 400px;
             width: 100%;
         }
