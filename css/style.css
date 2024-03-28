@@ -1366,6 +1366,10 @@
         object-fit: cover;
         object-position: center;
     }
+
+    .associates {
+        height: 700px;
+    }
 }
 /* 
 .img {
