@@ -890,6 +890,10 @@
         transform: translateX(-25%);
     }
 
+    .py5 {
+        height: fit-content;
+    }
+
 }
 
 @media (min-width: 992px) {
