@@ -130,13 +130,14 @@
         <textarea id="additionalInfo" name="additionalInfo" rows="4"></textarea>
         <div class="buttons">
           <button type="submit" class="btn book-btn">Get Estimate</button>
-          <button class="btn cancel-btn" onclick="
+          
+        </div>
+      </form>
+      <button class="btn cancel-btn" onclick="
             const overlay = document.getElementById('overlay')
                 overlay.classList.toggle('overlay1')
 
             ">Cancel</button>
-        </div>
-      </form>
     </div>
   </div>
 
@@ -194,7 +195,7 @@
             aria-hidden="false"></iframe>
         </div>
         <div class="col-lg-4 col-md-12 wow fadeInUp" data-wow-delay="0.5s">
-          <form action="submit_message.php" method="post">
+          <form action="submit_message.php" method="POST">
             <div class="row g-3">
               <div class="col-md-6">
                 <div class="form-floating">
