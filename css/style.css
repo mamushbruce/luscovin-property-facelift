@@ -901,6 +901,10 @@
     .testimonial-carousel::after {
         width: 300px;
     }
+
+    .associates {
+        height: 700px;
+    }
 }
 
 /* py5 */
@@ -1009,6 +1013,10 @@
     grid-template-columns: 1fr 1fr;
   }
 
+  .associates {
+    height: 700px;
+}
+
 }
 
 @media screen and (min-width: 992px) {
@@ -1028,6 +1036,10 @@
     display: grid;
     grid-template-columns: 1fr;
   }
+
+  .associates {
+    height: 700px;
+}
 }
 
 @media screen and (min-width: 1200px) {
