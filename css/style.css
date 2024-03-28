@@ -890,8 +890,8 @@
         transform: translateX(-25%);
     }
 
-    .py5 {
-        height: fit-content;
+    .associates {
+        height: 700px;
     }
 
 }
@@ -905,14 +905,14 @@
 
 /* py5 */
 
-.py5 {
+/* .py5 {
     width: 100%;
     padding-right: var(--bs-gutter-x, .75rem);
     padding-left: var(--bs-gutter-x, .75rem);
     margin-right: auto;
     margin-left: auto;
     height: auto;
-}
+} */
 
 .testimonial-carousel .owl-item .testimonial-text,
 .testimonial-carousel .owl-item.center .testimonial-text * {
