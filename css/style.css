@@ -1347,10 +1347,15 @@
         justify-content: center;
     }
 
-    .cancel-btn {
-        top: 46px;
+    .booking-container {
+        height: calc(100vh - 200px);
     }
-    
+
+    .cancel-btn {
+        top: 115px;
+        right: 5px;
+    }
+
     .icon {
         padding: 10px !important;
     }
