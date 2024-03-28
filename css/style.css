@@ -1347,6 +1347,10 @@
         justify-content: center;
     }
 
+    .header-carousel .owl-nav {
+        top: 70%;
+    }
+
     .booking-container {
         height: calc(100vh - 200px);
     }
